@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name"> Garden Blossom Slot</string>
+    <string name="win_splash">YOU WON!</string>
+    <string name="coins">coins</string>
+
+</resources>
