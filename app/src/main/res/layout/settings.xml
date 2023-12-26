@@ -1,61 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="390dp"
-        android:layout_height="490dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:background="@drawable/setting_bg">
 
         <ImageView
             android:id="@+id/close"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/close"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/close"
+            android:contentDescription="@string/close_dialog"
+            android:padding="16dp"/>
 
         <ImageView
             android:id="@+id/music_on"
-            android:layout_width="85dp"
-            android:layout_height="35dp"
+            android:layout_width="104dp"
+            android:layout_height="52dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="60dp"
+            android:layout_marginRight="40dp"
             android:layout_marginTop="130dp"
-            android:background="@drawable/on"/>
+            android:background="@drawable/on"
+            android:contentDescription="@string/music_on_image_button"
+            android:padding="8dp"/>
 
         <ImageView
             android:id="@+id/music_off"
-            android:layout_width="85dp"
-            android:layout_height="35dp"
+            android:layout_width="112dp"
+            android:layout_height="64dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="108dp"
             android:background="@drawable/off"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:contentDescription="@string/music_off_image_button"
+            android:padding="8dp"/>
 
         <ImageView
             android:id="@+id/sounds_on"
-            android:layout_width="85dp"
-            android:layout_height="35dp"
+            android:layout_width="104dp"
+            android:layout_height="52dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="60dp"
+            android:layout_marginRight="40dp"
             android:layout_marginTop="210dp"
-            android:background="@drawable/on"/>
+            android:background="@drawable/on"
+            android:contentDescription="@string/sounds_on_image_button"
+            android:padding="8dp"/>
 
         <ImageView
             android:id="@+id/sounds_off"
-            android:layout_width="85dp"
-            android:layout_height="35dp"
+            android:layout_width="104dp"
+            android:layout_height="52dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="60dp"
+            android:layout_marginRight="40dp"
             android:layout_marginTop="210dp"
             android:background="@drawable/off"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:contentDescription="@string/sounds_off_image_button"
+            android:padding="8dp"/>
 
     </RelativeLayout>
 </RelativeLayout>

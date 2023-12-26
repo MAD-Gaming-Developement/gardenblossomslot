@@ -2,5 +2,15 @@
     <string name="app_name"> Garden Blossom Slot</string>
     <string name="win_splash">YOU WON!</string>
     <string name="coins">coins</string>
+    <string name="close_dialog">close_dialog</string>
+    <string name="music_on_image_button">music_on_image_button</string>
+    <string name="music_off_image_button">music_off_image_button</string>
+    <string name="sounds_on_image_button">sounds_on_image_button</string>
+    <string name="sounds_off_image_button">sounds_off_image_button</string>
+    <string name="minus_button">minus_button</string>
+    <string name="plus_button">plus_button</string>
+    <string name="spin_button">spin_button</string>
+    <string name="settings">settings</string>
+    <string name="splashscreen">splashscreen</string>
 
 </resources>

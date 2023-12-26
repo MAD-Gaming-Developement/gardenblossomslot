@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
     tools:context=".LoadingScr">
 
     <VideoView
@@ -11,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:visibility="visible" />
+        android:contentDescription="@string/splashscreen"
+        android:visibility="visible"
+        android:outlineAmbientShadowColor="#CCCCCC"
+        android:importantForAccessibility="no"/>/>
 
 </RelativeLayout>

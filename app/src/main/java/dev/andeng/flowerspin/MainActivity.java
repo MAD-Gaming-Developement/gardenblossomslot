@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity{
     private customManager layoutManager3;
 
 
-    private TextView energyBallPrice;
+    private TextView energyFlowerPrice;
     private TextView myPower;
     private TextView bet;
 
@@ -113,10 +113,10 @@ public class MainActivity extends AppCompatActivity{
         //Initializations
         gameLogic = new Mechanics();
         settingsButton = findViewById(R.id.settings);
-        spinButton = findViewById(R.id.spinButton);
-        plusButton = findViewById(R.id.plusButton);
-        minusButton = findViewById(R.id.minusButton);
-        energyBallPrice = findViewById(R.id.energyBall);
+        spinButton = findViewById(R.id.spin);
+        plusButton = findViewById(R.id.plus);
+        minusButton = findViewById(R.id.minus);
+        energyFlowerPrice = findViewById(R.id.energyBall);
         myPower = findViewById(R.id.energy);
         bet = findViewById(R.id.bet);
         adapter = new SpinnerAdapter();
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void updateText() {
-        energyBallPrice.setText(gameLogic.getJackpot());
+        energyFlowerPrice.setText(gameLogic.getJackpot());
         myPower.setText(gameLogic.getMyCoins());
         bet.setText(gameLogic.getBet());
 

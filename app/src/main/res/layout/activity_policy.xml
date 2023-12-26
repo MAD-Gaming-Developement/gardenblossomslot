@@ -15,7 +15,9 @@
         app:layout_constraintBottom_toTopOf="@+id/layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:outlineAmbientShadowColor="#CCCCCC"
+        android:importantForAccessibility="no"/>
 
     <LinearLayout
         android:id="@+id/layout"

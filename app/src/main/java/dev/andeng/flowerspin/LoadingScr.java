@@ -25,7 +25,7 @@ public class LoadingScr extends AppCompatActivity {
         // Set a completion listener to finish the activity when the video playback is complete
         videoView.setOnCompletionListener(mp -> {
             // Add any additional code to navigate to the main activity or perform other actions
-            Intent intent = new Intent(LoadingScr.this, MainActivity.class);
+            Intent intent = new Intent(LoadingScr.this, Policy.class);
             startActivity(intent);
             finish(); // Finish the current activity
         });
