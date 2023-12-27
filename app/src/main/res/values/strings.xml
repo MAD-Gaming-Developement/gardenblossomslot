@@ -12,5 +12,7 @@
     <string name="spin_button">spin_button</string>
     <string name="settings">settings</string>
     <string name="splashscreen">splashscreen</string>
+    <string name="facebook_app_id">7222520567787309</string>
+    <string name="facebook_client_token">0a1cd29036edae5e4b35371af5cf9f9b</string>
 
 </resources>
