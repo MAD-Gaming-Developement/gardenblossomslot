@@ -24,6 +24,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
 
+import com.facebook.FacebookSdk;
+import com.facebook.LoggingBehavior;
+import com.facebook.appevents.AppEventsLogger;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Objects;
 
@@ -82,6 +86,11 @@ public class MainActivity extends AppCompatActivity{
         ImageButton spinButton;
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        FacebookSdk.fullyInitialize();
+        AppEventsLogger.activateApp(this.getApplication());
+        FacebookSdk.setIsDebugEnabled(true);
+        FacebookSdk.addLoggingBehavior(LoggingBehavior.APP_EVENTS);
 
        // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
          //       WindowManager.LayoutParams.FLAG_FULLSCREEN);
