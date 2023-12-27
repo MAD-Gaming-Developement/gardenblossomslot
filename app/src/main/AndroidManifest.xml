@@ -27,7 +27,7 @@
             android:name=".Policy"
             android:exported="true" />
         <activity
-            android:name=".LoadingScr"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
