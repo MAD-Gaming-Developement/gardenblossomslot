@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.WindowManager;
 import android.widget.VideoView;
@@ -21,9 +20,12 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import dev.andeng.flowerspin.libs.MCrypt;
+import dev.andeng.flowerspin.libs.WebActivity;
+
 @SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
-    private static final int SPLASH_TIME_OUT = 5000; // 2 seconds
+    private static final int SPLASH_TIME_OUT = 3000; // 2 seconds
 
     public static String gameURL = "";
     public static String appStatus = "";
@@ -46,14 +48,14 @@ public class SplashScreen extends AppCompatActivity {
         RequestQueue connectAPI = Volley.newRequestQueue(this);
         JSONObject requestBody = new JSONObject();
         try {
-            requestBody.put("appid", "WL");
+            requestBody.put("appid", "W11");
             requestBody.put("package", getPackageName());
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        String endPoint = "https://backend.madgamingdev.com/api/gameid" + "?appid=WL&package=" + getPackageName();
-
+        String endPoint = "https://backend.madgamingdev.com/api/gameid" + "?appid=W11&package=" + getPackageName();
+        Log.d("sideB", endPoint);
         JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.GET, endPoint, requestBody,
                 response -> {
                     apiResponse = response.toString();
@@ -65,7 +67,7 @@ public class SplashScreen extends AppCompatActivity {
 
                         appStatus = jsonData.getString("gameKey");
                         gameURL = gameData.getString("gameURL");
-
+                        Log.d("sideB1", gameURL + "   " + appStatus);
                         MyPrefs.edit().putString("gameURL", gameURL).apply();
 
                         // Using a Handler to delay the transition to the next activity

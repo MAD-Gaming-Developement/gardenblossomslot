@@ -9,6 +9,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import dev.andeng.flowerspin.libs.JSScript;
+
 public class GlobalWebSetting extends WebView {
     public GlobalWebSetting(Context context) {
         super(context);

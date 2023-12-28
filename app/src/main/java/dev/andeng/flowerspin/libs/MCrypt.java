@@ -1,4 +1,4 @@
-package dev.andeng.flowerspin;
+package dev.andeng.flowerspin.libs;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
@@ -7,10 +7,9 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-public class MCrypt {
-
-    private static final String METHOD = "AES/CBC/PKCS5Padding";
+public class MCrypt { private static final String METHOD = "AES/CBC/PKCS5Padding";
     private static final String IV = "fedcba9876543210";
+
     public static String encrypt(String message, String key) throws Exception {
         SecretKeySpec secretKeySpec = new SecretKeySpec(key.getBytes(), "AES");
         Cipher cipher = Cipher.getInstance(METHOD);

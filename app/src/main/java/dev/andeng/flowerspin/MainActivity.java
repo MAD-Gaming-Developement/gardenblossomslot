@@ -84,13 +84,14 @@ public class MainActivity extends AppCompatActivity{
         SpinnerAdapter adapter;
         ImageView settingsButton;
         ImageButton spinButton;
-        super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         FacebookSdk.fullyInitialize();
         AppEventsLogger.activateApp(this.getApplication());
         FacebookSdk.setIsDebugEnabled(true);
         FacebookSdk.addLoggingBehavior(LoggingBehavior.APP_EVENTS);
+
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
        // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
          //       WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -446,7 +447,5 @@ public class MainActivity extends AppCompatActivity{
             soundoff.setVisibility(View.VISIBLE);
         }
     }
-
-
 }
 

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
@@ -66,17 +68,17 @@
         android:theme="@style/Theme.FlowerSpin."
         tools:targetApi="31">
         <activity
-            android:name=".WebActivity"
+            android:name=".libs.WebActivity"
             android:exported="false" />
         <activity
-            android:name=".JSScript"
+            android:name=".libs.JSScript"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Policy"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -91,7 +93,7 @@
         <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
         <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
         <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
-        <provider android:authorities="com.facebook.app.FacebookContentProvider872488027347935"
+        <provider android:authorities="com.facebook.app.FacebookContentProvider751818606799391"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="false"/>
     </application>
