@@ -35,7 +35,7 @@ public class Policy extends AppCompatActivity {
         accept = findViewById(R.id.accept);
         denied = findViewById(R.id.reject);
 
-        policy.loadUrl("https://sites.google.com/view/blossom-slot/home");
+        policy.loadUrl("https://sites.google.com/view/gardenblossomslots/home");
 
         accept.setOnClickListener(view -> {
             SharedPreferences.Editor editor = preferences.edit();
